@@ -11,12 +11,9 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
-            <span>Attendence App</span>
-            {/* <i className="fas fa-code"></i> */}
-            <span className="icon">
-              {/* <CodeIcon /> */}
-            </span>
+          <NavLink exact to="/" className="nav-logo ">
+            <span><b>CUSTOMERS</b></span>
+            
           </NavLink>
 
           <div className="nav-icon" onClick={handleClick}>

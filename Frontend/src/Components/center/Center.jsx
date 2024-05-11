@@ -9,7 +9,7 @@ function Center() {
       <div className='secDiv'>
         <Header />
       <ActiveTab />
-      <DataTable />
+      <DataTable /> 
       </div>
     </div>
   )
