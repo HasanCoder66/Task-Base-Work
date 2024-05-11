@@ -1,24 +1,28 @@
 import express from "express";
 import {
-  createCustomer
+  createCustomer,
+  updateCustomer,
+  deleteCustomer
 } from "../Controllers/CustomersController.js";
 
 const customerRoutes = express.Router();
 
-//======================= CREATE RESIDENTS ======================//
-// http://localhost:8800/api/resident/
-// residentRoutes.post("/", verifyAdmin, createResident);
+
+//======================= CREATE CUSTOMER ======================//
+// http://localhost:5000/api/customer/
 customerRoutes.post("/create", createCustomer);
 
-//======================= UPDATE RESIDENTS ======================//
-// http://localhost:8800/api/resident/660b37d3da1211544662db30
-// residentRoutes.put("/:residentId", verifyAdmin, updateResident);
-// customerRoutes.put("/:residentId", updateResident);
 
-//======================= DELETE RESIDENTS ======================//
-// http://localhost:8800/api/resident/660b37d3da1211544662db30
-// residentRoutes.delete("/:residentId", verifyAdmin, deleteResident);
-// customerRoutes.delete("/:residentId", deleteResident);
+
+//======================= UPDATE CUSTOMER ======================//
+// http://localhost:5000/api/customer/:customerId
+customerRoutes.put("/:customerId", updateCustomer);
+
+
+
+//======================= DELETE CUSTOMER ======================//
+// http://localhost:5000/api/customer/:customerId
+customerRoutes.delete("/:customerId", deleteCustomer);
 
 
 

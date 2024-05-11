@@ -14,6 +14,7 @@ app.use(express.json());
 
 app.use('/api/customer', customerRoutes)
 
+
 // SERVER LISTENING ON THE PORT
 app.listen(PORT, () => {
   BackendConnect();
